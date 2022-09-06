@@ -10,6 +10,10 @@
     position: fixed;
     z-index: 5;
     padding: 0;
+    div{
+      left: 50%
+    }
+
 }
 
 .carousel {
@@ -17,7 +21,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    font-family: "Oswald", sans-serif;
     width: 100%;
 }
 

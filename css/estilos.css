@@ -11,13 +11,15 @@
   z-index: 5;
   padding: 0;
 }
+.barraNav div {
+  left: 50%;
+}
 
 .carousel {
   text-align: center;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  font-family: "Oswald", sans-serif;
   width: 100%;
 }
 
