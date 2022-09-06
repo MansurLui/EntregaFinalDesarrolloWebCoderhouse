@@ -10,6 +10,10 @@
     position: fixed;
     z-index: 5;
     padding: 0;
+    div{
+        left: 50%
+    }
+
 }
 
 .carousel {
@@ -17,7 +21,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    font-family: "Oswald", sans-serif;
     width: 100%;
 }
 
@@ -45,6 +48,7 @@ section {
     text-align: center;
     height: 80vh;
     z-index: 2;
+    width: 100%;
 
     div {
     font-size: 20px;
@@ -69,41 +73,40 @@ section {
     text-decoration: none;
 }
 
-
-.Novia {
-    background-image: url(../img/noviaimg.jpg);
+.position_cards{
     background-position: center;
     background-size: cover;
+}
+
+.Novia{
+    background-image: url(../img/noviaimg.jpg);
+    @extend .position_cards;
+
 
     :hover {
     background-image: url(../img/noviaimg.jpg);
-    background-position: center;
-    background-size: cover;
+    @extend .position_cards;
     opacity: 0.7;
 }
 }
 
 .Quinceañeras {
     background-image: url(../img/quinceañeraimg.jpg);
-    background-position: center;
-    background-size: cover;
+    @extend .position_cards;
 
     :hover {
         background-image: url(../img/quinceañeraimg.jpg);
-        background-position: center;
-        background-size: cover;
+        @extend .position_cards;
         opacity: 0.7;
     }
 }
 .Social {
     background-image: url(../img/socialimg.jpg);
-    background-position: center;
-    background-size: cover;
+    @extend .position_cards;
 
     :hover {
         background-image: url(../img/socialimg.jpg);
-        background-position: center;
-        background-size: cover;
+        @extend .position_cards;
         opacity: 0.7;
     }
 }
@@ -185,9 +188,13 @@ footer {
 }
 
 // ----  galeria ---- //
+@mixin sizes($width, $bcolor) {
+    width:$width;
+    background-color:$bcolor
+}
+
 .galeria {
-    background-color: #260502;
-    width: 100%;
+    @include sizes(100%,#260502);
 }
 
 .article1,
@@ -197,6 +204,5 @@ footer {
 .article5,
 .article6 {
     z-index: 2;
-    background-color: #260502;
     padding: 10px;
 }

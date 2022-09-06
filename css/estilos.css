@@ -11,13 +11,15 @@
   z-index: 5;
   padding: 0;
 }
+.barraNav div {
+  left: 50%;
+}
 
 .carousel {
   text-align: center;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  font-family: "Oswald", sans-serif;
   width: 100%;
 }
 
@@ -42,6 +44,7 @@ section {
   text-align: center;
   height: 80vh;
   z-index: 2;
+  width: 100%;
 }
 section div {
   font-size: 20px;
@@ -63,39 +66,32 @@ section div card {
   text-decoration: none;
 }
 
-.Novia {
-  background-image: url(../img/noviaimg.jpg);
+.position_cards, .Social :hover, .Social, .Quinceañeras :hover, .Quinceañeras, .Novia :hover, .Novia {
   background-position: center;
   background-size: cover;
 }
+
+.Novia {
+  background-image: url(../img/noviaimg.jpg);
+}
 .Novia :hover {
   background-image: url(../img/noviaimg.jpg);
-  background-position: center;
-  background-size: cover;
   opacity: 0.7;
 }
 
 .Quinceañeras {
   background-image: url(../img/quinceañeraimg.jpg);
-  background-position: center;
-  background-size: cover;
 }
 .Quinceañeras :hover {
   background-image: url(../img/quinceañeraimg.jpg);
-  background-position: center;
-  background-size: cover;
   opacity: 0.7;
 }
 
 .Social {
   background-image: url(../img/socialimg.jpg);
-  background-position: center;
-  background-size: cover;
 }
 .Social :hover {
   background-image: url(../img/socialimg.jpg);
-  background-position: center;
-  background-size: cover;
   opacity: 0.7;
 }
 
@@ -169,8 +165,8 @@ footer {
 }
 
 .galeria {
-  background-color: #260502;
   width: 100%;
+  background-color: #260502;
 }
 
 .article1,
@@ -180,7 +176,6 @@ footer {
 .article5,
 .article6 {
   z-index: 2;
-  background-color: #260502;
   padding: 10px;
 }
 
