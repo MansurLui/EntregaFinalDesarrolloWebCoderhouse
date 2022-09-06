@@ -165,8 +165,8 @@ footer {
 }
 
 .galeria {
-  background-color: #260502;
   width: 100%;
+  background-color: #260502;
 }
 
 .article1,
@@ -176,7 +176,6 @@ footer {
 .article5,
 .article6 {
   z-index: 2;
-  background-color: #260502;
   padding: 10px;
 }
 

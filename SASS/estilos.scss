@@ -188,9 +188,13 @@ footer {
 }
 
 // ----  galeria ---- //
+@mixin sizes($width, $bcolor) {
+    width:$width;
+    background-color:$bcolor
+}
+
 .galeria {
-    background-color: #260502;
-    width: 100%;
+    @include sizes(100%,#260502);
 }
 
 .article1,
@@ -200,6 +204,5 @@ footer {
 .article5,
 .article6 {
     z-index: 2;
-    background-color: #260502;
     padding: 10px;
 }
