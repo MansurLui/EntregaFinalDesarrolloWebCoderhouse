@@ -39,6 +39,11 @@ h2 {
   text-align: center;
 }
 
+.position_cards, .Social :hover, .Social, .Quinceañeras :hover, .Quinceañeras, .Novia :hover, .Novia {
+  background-position: center;
+  background-size: cover;
+}
+
 section {
   display: inline-block;
   text-align: center;
@@ -64,11 +69,6 @@ section div card {
 
 .Descripcion {
   text-decoration: none;
-}
-
-.position_cards, .Social :hover, .Social, .Quinceañeras :hover, .Quinceañeras, .Novia :hover, .Novia {
-  background-position: center;
-  background-size: cover;
 }
 
 .Novia {

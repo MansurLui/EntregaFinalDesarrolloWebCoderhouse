@@ -43,6 +43,19 @@ h2 {
 
 
 // ----  cards ---- //
+
+//extend//
+.position_cards{
+    background-position: center;
+    background-size: cover;
+}
+//mixin//
+@mixin sizes($width, $bcolor) {
+    width:$width;
+    background-color:$bcolor
+}
+
+
 section {
     display: inline-block;
     text-align: center;
@@ -71,11 +84,6 @@ section {
 
 .Descripcion {
     text-decoration: none;
-}
-
-.position_cards{
-    background-position: center;
-    background-size: cover;
 }
 
 .Novia{
@@ -188,11 +196,6 @@ footer {
 }
 
 // ----  galeria ---- //
-@mixin sizes($width, $bcolor) {
-    width:$width;
-    background-color:$bcolor
-}
-
 .galeria {
     @include sizes(100%,#260502);
 }
