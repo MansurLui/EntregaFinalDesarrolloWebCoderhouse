@@ -1,0 +1,187 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+.barraNav {
+  position: fixed;
+  z-index: 5;
+  padding: 0;
+}
+
+.carousel {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+}
+
+.container-fluid {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  width: 100%;
+  color: white;
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+section {
+  display: inline-block;
+  text-align: center;
+  height: 80vh;
+  z-index: 2;
+}
+section div {
+  font-size: 20px;
+  text-align: center;
+  z-index: 2;
+}
+section div card {
+  height: 70vh;
+  display: inline-block;
+  border: 3px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Descripcion {
+  text-decoration: none;
+}
+
+.Novia {
+  background-image: url(../img/noviaimg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.Novia :hover {
+  background-image: url(../img/noviaimg.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.Quinceañeras {
+  background-image: url(../img/quinceañeraimg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.Quinceañeras :hover {
+  background-image: url(../img/quinceañeraimg.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.Social {
+  background-image: url(../img/socialimg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.Social :hover {
+  background-image: url(../img/socialimg.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+footer {
+  background-color: #260502;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  font-size: 15px;
+  font-family: "Oswald", sans-serif;
+  z-index: 5;
+}
+
+.LogoInsta,
+.LogoWsp,
+.LogoGmail {
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  padding: 15px;
+}
+
+.Ubicacion {
+  color: white;
+  width: 80px;
+  height: 80px;
+  right: 5px;
+  padding: 10px;
+}
+
+.BotonVolver {
+  height: 60px;
+  width: 60px;
+  bottom: 120px;
+  right: 80%;
+  position: fixed;
+  text-align: center;
+  line-height: 45px;
+  background-color: black;
+  border: 3px solid white;
+  font-size: 35px;
+  border-radius: 50%;
+  color: white;
+  z-index: 15;
+}
+
+.contacto {
+  border-radius: 10px;
+  border: 3px solid black;
+  padding: 10px;
+  background-color: rgba(129, 129, 125, 0.262745098);
+  height: 80vh;
+  position: relative;
+}
+
+.Nosotras {
+  background: rgb(101, 6, 6);
+  background: radial-gradient(circle, rgb(101, 6, 6) 0%, rgba(237, 162, 140, 0.2021183473) 100%);
+  border: 3px solid black;
+  border-radius: 10px;
+  height: 79vh;
+  text-align: center;
+  padding: 25px;
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+.Nosotras h2 {
+  padding-top: 25%;
+}
+
+.galeria {
+  background-color: #260502;
+  width: 100%;
+}
+
+.article1,
+.article2,
+.article3,
+.article4,
+.article5,
+.article6 {
+  z-index: 2;
+  background-color: #260502;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
