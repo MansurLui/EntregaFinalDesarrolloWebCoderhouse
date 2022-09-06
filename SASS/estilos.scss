@@ -11,7 +11,7 @@
     z-index: 5;
     padding: 0;
     div{
-      left: 50%
+        left: 50%
     }
 
 }
@@ -72,41 +72,40 @@ section {
     text-decoration: none;
 }
 
-
-.Novia {
-    background-image: url(../img/noviaimg.jpg);
+.position_cards{
     background-position: center;
     background-size: cover;
+}
+
+.Novia{
+    background-image: url(../img/noviaimg.jpg);
+    @extend .position_cards;
+
 
     :hover {
     background-image: url(../img/noviaimg.jpg);
-    background-position: center;
-    background-size: cover;
+    @extend .position_cards;
     opacity: 0.7;
 }
 }
 
 .Quinceañeras {
     background-image: url(../img/quinceañeraimg.jpg);
-    background-position: center;
-    background-size: cover;
+    @extend .position_cards;
 
     :hover {
         background-image: url(../img/quinceañeraimg.jpg);
-        background-position: center;
-        background-size: cover;
+        @extend .position_cards;
         opacity: 0.7;
     }
 }
 .Social {
     background-image: url(../img/socialimg.jpg);
-    background-position: center;
-    background-size: cover;
+    @extend .position_cards;
 
     :hover {
         background-image: url(../img/socialimg.jpg);
-        background-position: center;
-        background-size: cover;
+        @extend .position_cards;
         opacity: 0.7;
     }
 }
