@@ -4,46 +4,6 @@
     box-sizing: border-box;
     font-family: "Oswald", sans-serif;
 }
-
-// ----  barra navegacion ---- //
-.barraNav {
-    position: fixed;
-    z-index: 5;
-    padding: 0;
-    div{
-        left: 50%
-    }
-
-}
-
-.carousel {
-    text-align: center;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-}
-
-.container-fluid {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    width: 100%;
-    color: white;
-    text-decoration: none;
-}
-
-
-h2 {
-    text-align: center;
-}
-
-
-// ----  cards ---- //
-
 //extend//
 .position_cards{
     background-position: center;
@@ -55,31 +15,63 @@ h2 {
     background-color:$bcolor
 }
 
+// ----  barra navegacion ---- //
+.barraNav {
+    position: fixed;
+    z-index: 5;
+    padding: 0;
+    div{
+        left: 50%
+    }
+    h1{
+        font-size: 1.2em;
+    }
+}
 
+// ---- carrousel ---- //
+.carousel {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+
+.container-fluid {
+    text-align: center;
+    margin: 0;
+    padding: 0;}
+    a {
+        width: 100%;
+        color: white;
+        text-decoration: none;
+    }
+    h2 {
+        text-align: center;
+    }
+
+// ----  cards ---- //
 section {
     display: inline-block;
     text-align: center;
     height: 80vh;
     z-index: 2;
     width: 100%;
-
     div {
-    font-size: 20px;
-    text-align: center;
-    z-index: 2;
-
-
+        font-size: 20px;
+        text-align: center;
+        z-index: 2;
         card {
-    height: 70vh;
-    display: inline-block;
-    border: 3px solid black;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-}
+            height: 70vh;
+            display: inline-block;
+            border: 3px solid black;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            }
+        }
 }
 
 .Descripcion {
@@ -89,19 +81,16 @@ section {
 .Novia{
     background-image: url(../img/noviaimg.jpg);
     @extend .position_cards;
-
-
     :hover {
     background-image: url(../img/noviaimg.jpg);
     @extend .position_cards;
     opacity: 0.7;
-}
+    }
 }
 
 .Quinceañeras {
     background-image: url(../img/quinceañeraimg.jpg);
     @extend .position_cards;
-
     :hover {
         background-image: url(../img/quinceañeraimg.jpg);
         @extend .position_cards;
@@ -111,7 +100,6 @@ section {
 .Social {
     background-image: url(../img/socialimg.jpg);
     @extend .position_cards;
-
     :hover {
         background-image: url(../img/socialimg.jpg);
         @extend .position_cards;
@@ -167,7 +155,6 @@ footer {
 
 // ----  contacto ---- //
 .contacto {
-
     border-radius: 10px;
     border: 3px solid black;
     padding: 10px;
@@ -189,7 +176,6 @@ footer {
     padding: 25px;
     font-family: "Oswald", sans-serif;
     color: white;
-
     h2 {
         padding-top: 25%;
     }
@@ -198,14 +184,8 @@ footer {
 // ----  galeria ---- //
 .galeria {
     @include sizes(100%,#260502);
-}
-
-.article1,
-.article2,
-.article3,
-.article4,
-.article5,
-.article6 {
-    z-index: 2;
-    padding: 10px;
+    .article1,.article2,.article3,.article4,.article5,.article6 {
+        z-index: 2;
+        padding: 10px;
+    }
 }

@@ -6,6 +6,11 @@
   font-family: "Oswald", sans-serif;
 }
 
+.position_cards, .Social :hover, .Social, .Quinceañeras :hover, .Quinceañeras, .Novia :hover, .Novia {
+  background-position: center;
+  background-size: cover;
+}
+
 .barraNav {
   position: fixed;
   z-index: 5;
@@ -13,6 +18,9 @@
 }
 .barraNav div {
   left: 50%;
+}
+.barraNav h1 {
+  font-size: 1.2em;
 }
 
 .carousel {
@@ -37,11 +45,6 @@ a {
 
 h2 {
   text-align: center;
-}
-
-.position_cards, .Social :hover, .Social, .Quinceañeras :hover, .Quinceañeras, .Novia :hover, .Novia {
-  background-position: center;
-  background-size: cover;
 }
 
 section {
@@ -168,13 +171,7 @@ footer {
   width: 100%;
   background-color: #260502;
 }
-
-.article1,
-.article2,
-.article3,
-.article4,
-.article5,
-.article6 {
+.galeria .article1, .galeria .article2, .galeria .article3, .galeria .article4, .galeria .article5, .galeria .article6 {
   z-index: 2;
   padding: 10px;
 }
