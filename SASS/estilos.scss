@@ -9,6 +9,16 @@
     background-position: center;
     background-size: cover;
 }
+.barra {
+    z-index: 5;
+    padding: 0;
+    div{
+        left: 50%
+    }
+    h1{
+        font-size: 1em;
+    }
+}
 //mixin//
 @mixin sizes($width, $bcolor) {
     width:$width;
@@ -18,14 +28,7 @@
 // ----  barra navegacion ---- //
 .barraNav {
     position: fixed;
-    z-index: 5;
-    padding: 0;
-    div{
-        left: 50%
-    }
-    h1{
-        font-size: 1.2em;
-    }
+    @extend .barra;
 }
 
 // ---- carrousel ---- //
@@ -77,7 +80,6 @@ section {
 .Descripcion {
     text-decoration: none;
 }
-
 .Novia{
     background-image: url(../img/noviaimg.jpg);
     @extend .position_cards;
@@ -87,7 +89,6 @@ section {
     opacity: 0.7;
     }
 }
-
 .Quinceañeras {
     background-image: url(../img/quinceañeraimg.jpg);
     @extend .position_cards;
@@ -107,6 +108,42 @@ section {
     }
 }
 
+// ----  contacto ---- //
+.contacto {
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 10px;
+    background-color: #81817d43;
+    height: 80vh;
+    position: relative;
+}
+
+// ----  nosotras ---- //
+.Nosotras {
+    background: rgb(101, 6, 6);
+    background: radial-gradient(circle,
+            rgba(101, 6, 6, 1) 0%,
+            rgba(237, 162, 140, 0.20211834733893552) 100%);
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 75vh;
+    text-align: center;
+    padding: 25px;
+    font-family: "Oswald", sans-serif;
+    color: white;
+    h2 {
+        padding-top: 25%;
+    }
+}
+
+// ----  galeria ---- //
+.galeria {
+    @include sizes(100%,#260502);
+    .article1,.article2,.article3,.article4,.article5,.article6 {
+        z-index: 2;
+        padding: 10px;
+    }
+}
 // ----  footer ---- //
 footer {
     background-color: #260502;
@@ -151,41 +188,4 @@ footer {
     border-radius: 50%;
     color: white;
     z-index: 15;
-}
-
-// ----  contacto ---- //
-.contacto {
-    border-radius: 10px;
-    border: 3px solid black;
-    padding: 10px;
-    background-color: #81817d43;
-    height: 80vh;
-    position: relative;
-}
-
-// ----  nosotras ---- //
-.Nosotras {
-    background: rgb(101, 6, 6);
-    background: radial-gradient(circle,
-            rgba(101, 6, 6, 1) 0%,
-            rgba(237, 162, 140, 0.20211834733893552) 100%);
-    border: 3px solid black;
-    border-radius: 10px;
-    height: 79vh;
-    text-align: center;
-    padding: 25px;
-    font-family: "Oswald", sans-serif;
-    color: white;
-    h2 {
-        padding-top: 25%;
-    }
-}
-
-// ----  galeria ---- //
-.galeria {
-    @include sizes(100%,#260502);
-    .article1,.article2,.article3,.article4,.article5,.article6 {
-        z-index: 2;
-        padding: 10px;
-    }
 }

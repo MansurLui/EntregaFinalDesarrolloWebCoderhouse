@@ -11,16 +11,19 @@
   background-size: cover;
 }
 
-.barraNav {
-  position: fixed;
+.barra, .barraNav {
   z-index: 5;
   padding: 0;
 }
-.barraNav div {
+.barra div, .barraNav div {
   left: 50%;
 }
-.barraNav h1 {
-  font-size: 1.2em;
+.barra h1, .barraNav h1 {
+  font-size: 1em;
+}
+
+.barraNav {
+  position: fixed;
 }
 
 .carousel {
@@ -98,6 +101,39 @@ section div card {
   opacity: 0.7;
 }
 
+.contacto {
+  border-radius: 10px;
+  border: 3px solid black;
+  padding: 10px;
+  background-color: rgba(129, 129, 125, 0.262745098);
+  height: 80vh;
+  position: relative;
+}
+
+.Nosotras {
+  background: rgb(101, 6, 6);
+  background: radial-gradient(circle, rgb(101, 6, 6) 0%, rgba(237, 162, 140, 0.2021183473) 100%);
+  border: 3px solid black;
+  border-radius: 10px;
+  height: 75vh;
+  text-align: center;
+  padding: 25px;
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+.Nosotras h2 {
+  padding-top: 25%;
+}
+
+.galeria {
+  width: 100%;
+  background-color: #260502;
+}
+.galeria .article1, .galeria .article2, .galeria .article3, .galeria .article4, .galeria .article5, .galeria .article6 {
+  z-index: 2;
+  padding: 10px;
+}
+
 footer {
   background-color: #260502;
   text-align: center;
@@ -141,39 +177,6 @@ footer {
   border-radius: 50%;
   color: white;
   z-index: 15;
-}
-
-.contacto {
-  border-radius: 10px;
-  border: 3px solid black;
-  padding: 10px;
-  background-color: rgba(129, 129, 125, 0.262745098);
-  height: 80vh;
-  position: relative;
-}
-
-.Nosotras {
-  background: rgb(101, 6, 6);
-  background: radial-gradient(circle, rgb(101, 6, 6) 0%, rgba(237, 162, 140, 0.2021183473) 100%);
-  border: 3px solid black;
-  border-radius: 10px;
-  height: 79vh;
-  text-align: center;
-  padding: 25px;
-  font-family: "Oswald", sans-serif;
-  color: white;
-}
-.Nosotras h2 {
-  padding-top: 25%;
-}
-
-.galeria {
-  width: 100%;
-  background-color: #260502;
-}
-.galeria .article1, .galeria .article2, .galeria .article3, .galeria .article4, .galeria .article5, .galeria .article6 {
-  z-index: 2;
-  padding: 10px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
