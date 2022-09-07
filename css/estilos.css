@@ -121,8 +121,52 @@ section div card {
   font-family: "Oswald", sans-serif;
   color: white;
 }
-.Nosotras h2 {
-  padding-top: 25%;
+.Nosotras div {
+  position: center;
+}
+
+.maps-red {
+  background-color: #333;
+  height: 200px;
+  width: 50%;
+  border: 10px solid red;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 0 0 5px orange;
+  border-radius: 10px;
+}
+
+.maps-orange {
+  background-color: #333;
+  height: 200px;
+  width: 50%;
+  border: 20px solid orange;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 0 0 5px orange;
+  border-radius: 10px;
+}
+
+.maps-yellow {
+  background-color: #333;
+  height: 200px;
+  width: 50%;
+  border: 30px solid yellow;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 0 0 5px orange;
+  border-radius: 10px;
+}
+
+.maps-green {
+  background-color: #333;
+  height: 200px;
+  width: 50%;
+  border: 40px solid green;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 0 0 5px orange;
+  border-radius: 10px;
 }
 
 .galeria {

@@ -131,10 +131,30 @@ section {
     padding: 25px;
     font-family: "Oswald", sans-serif;
     color: white;
-    h2 {
-        padding-top: 25%;
+    div{
+        position:center;
     }
 }
+
+$mapa: (
+    10px: red,
+    20px: orange,
+    30px: yellow,
+    40px: green,
+    );
+    @each $sizes, $colours in $mapa {
+        .maps-#{$colours} {
+            background-color: #333;
+            height: 200px;
+            width: 50%;
+            border: $sizes solid $colours;
+            text-align: center;
+            font-size: 30px;
+            text-shadow: 0 0 5px orange ;
+            border-radius: 10px;
+        }
+    }
+
 
 // ----  galeria ---- //
 .galeria {
