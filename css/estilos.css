@@ -18,12 +18,10 @@
 .barra div, .barraNav div {
   left: 50%;
 }
-.barra h1, .barraNav h1 {
-  font-size: 1em;
-}
 
-.barraNav {
-  position: fixed;
+h1 {
+  font-size: 1em;
+  position: center;
 }
 
 .carousel {
@@ -115,10 +113,9 @@ section div card {
   background: radial-gradient(circle, rgb(101, 6, 6) 0%, rgba(237, 162, 140, 0.2021183473) 100%);
   border: 3px solid black;
   border-radius: 10px;
-  height: 75vh;
+  height: 85vh;
   text-align: center;
   padding: 25px;
-  font-family: "Oswald", sans-serif;
   color: white;
 }
 .Nosotras div {
@@ -127,7 +124,7 @@ section div card {
 
 .maps-red {
   background-color: #333;
-  height: 200px;
+  height: 4em;
   width: 50%;
   border: 10px solid red;
   text-align: center;
@@ -138,7 +135,7 @@ section div card {
 
 .maps-orange {
   background-color: #333;
-  height: 200px;
+  height: 4em;
   width: 50%;
   border: 20px solid orange;
   text-align: center;
@@ -149,7 +146,7 @@ section div card {
 
 .maps-yellow {
   background-color: #333;
-  height: 200px;
+  height: 4em;
   width: 50%;
   border: 30px solid yellow;
   text-align: center;
@@ -160,7 +157,7 @@ section div card {
 
 .maps-green {
   background-color: #333;
-  height: 200px;
+  height: 4em;
   width: 50%;
   border: 40px solid green;
   text-align: center;
@@ -221,6 +218,11 @@ footer {
   border-radius: 50%;
   color: white;
   z-index: 15;
+  text-decoration: none;
+}
+.BotonVolver a {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=estilos.css.map */
