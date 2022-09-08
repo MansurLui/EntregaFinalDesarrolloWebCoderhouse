@@ -20,7 +20,7 @@
 }
 
 .Boton, .BotonSubir, .BotonVolver {
-  bottom: 120px;
+  bottom: 150px;
   height: 60px;
   width: 60px;
   position: fixed;
@@ -40,7 +40,7 @@
 
 h1 {
   font-size: 1em;
-  position: center;
+  position: left;
 }
 
 .carousel {
@@ -119,9 +119,7 @@ section div card {
 }
 
 .contacto {
-  border-radius: 10px;
-  border: 3px solid black;
-  padding: 10px;
+  padding: 15px;
   background-color: rgba(129, 129, 125, 0.262745098);
   height: 80vh;
   position: relative;
@@ -130,59 +128,14 @@ section div card {
 .Nosotras {
   background: rgb(101, 6, 6);
   background: radial-gradient(circle, rgb(101, 6, 6) 0%, rgba(237, 162, 140, 0.2021183473) 100%);
-  border: 3px solid black;
-  border-radius: 10px;
   height: 85vh;
   text-align: center;
   padding: 25px;
   color: white;
+  text-shadow: 0px 0px black;
 }
 .Nosotras div {
   position: center;
-}
-
-.maps-red {
-  background-color: #333;
-  height: 4em;
-  width: 50%;
-  border: 10px solid red;
-  text-align: center;
-  font-size: 30px;
-  text-shadow: 0 0 5px orange;
-  border-radius: 10px;
-}
-
-.maps-orange {
-  background-color: #333;
-  height: 4em;
-  width: 50%;
-  border: 20px solid orange;
-  text-align: center;
-  font-size: 30px;
-  text-shadow: 0 0 5px orange;
-  border-radius: 10px;
-}
-
-.maps-yellow {
-  background-color: #333;
-  height: 4em;
-  width: 50%;
-  border: 30px solid yellow;
-  text-align: center;
-  font-size: 30px;
-  text-shadow: 0 0 5px orange;
-  border-radius: 10px;
-}
-
-.maps-green {
-  background-color: #333;
-  height: 4em;
-  width: 50%;
-  border: 40px solid green;
-  text-align: center;
-  font-size: 30px;
-  text-shadow: 0 0 5px orange;
-  border-radius: 10px;
 }
 
 .galeria {
@@ -230,9 +183,6 @@ footer {
 .BotonSubir {
   left: 80%;
   font-size: 45px;
-}
-.BotonSubir a {
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=estilos.css.map */
