@@ -6,41 +6,11 @@
   font-family: "Oswald", sans-serif;
 }
 
-.position_cards, .Social :hover, .Social, .Quinceañeras :hover, .Quinceañeras, .Novia :hover, .Novia {
-  background-position: center;
-  background-size: cover;
-}
-
-.barra, .barraNav {
+.barraNav {
+  position: fixed;
   z-index: 5;
   padding: 0;
-}
-.barra div, .barraNav div {
-  left: 50%;
-}
 
-.Boton, .BotonSubir, .BotonVolver {
-  bottom: 150px;
-  height: 60px;
-  width: 60px;
-  position: fixed;
-  text-align: center;
-  line-height: 45px;
-  background-color: black;
-  border: 3px solid white;
-  font-size: 35px;
-  border-radius: 50%;
-  z-index: 15;
-  text-decoration: none;
-}
-.Boton a, .BotonSubir a, .BotonVolver a {
-  text-decoration: none;
-  color: white;
-}
-
-h1 {
-  font-size: 1em;
-  position: left;
 }
 
 .carousel {
@@ -48,6 +18,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  font-family: "Oswald", sans-serif;
   width: 100%;
 }
 
@@ -72,7 +43,6 @@ section {
   text-align: center;
   height: 80vh;
   z-index: 2;
-  width: 100%;
 }
 section div {
   font-size: 20px;
@@ -96,55 +66,38 @@ section div card {
 
 .Novia {
   background-image: url(../img/noviaimg.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .Novia :hover {
   background-image: url(../img/noviaimg.jpg);
+  background-position: center;
+  background-size: cover;
   opacity: 0.7;
 }
 
 .Quinceañeras {
   background-image: url(../img/quinceañeraimg.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .Quinceañeras :hover {
   background-image: url(../img/quinceañeraimg.jpg);
+  background-position: center;
+  background-size: cover;
   opacity: 0.7;
 }
 
 .Social {
   background-image: url(../img/socialimg.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .Social :hover {
   background-image: url(../img/socialimg.jpg);
+  background-position: center;
+  background-size: cover;
   opacity: 0.7;
-}
-
-.contacto {
-  padding: 15px;
-  background-color: rgba(129, 129, 125, 0.262745098);
-  height: 80vh;
-  position: relative;
-}
-
-.Nosotras {
-  background: rgb(101, 6, 6);
-  background: radial-gradient(circle, rgb(101, 6, 6) 0%, rgba(237, 162, 140, 0.2021183473) 100%);
-  height: 85vh;
-  text-align: center;
-  padding: 25px;
-  color: white;
-  text-shadow: 0px 0px black;
-}
-.Nosotras div {
-  position: center;
-}
-
-.galeria {
-  width: 100%;
-  background-color: #260502;
-}
-.galeria .article1, .galeria .article2, .galeria .article3, .galeria .article4, .galeria .article5, .galeria .article6 {
-  z-index: 2;
-  padding: 10px;
 }
 
 footer {
@@ -177,12 +130,59 @@ footer {
 }
 
 .BotonVolver {
+  height: 60px;
+  width: 60px;
+  bottom: 120px;
   right: 80%;
+  position: fixed;
+  text-align: center;
+  line-height: 45px;
+  background-color: black;
+  border: 3px solid white;
+  font-size: 35px;
+  border-radius: 50%;
+  color: white;
+  z-index: 15;
 }
 
-.BotonSubir {
-  left: 80%;
-  font-size: 45px;
+.contacto {
+  border-radius: 10px;
+  border: 3px solid black;
+  padding: 10px;
+  background-color: rgba(129, 129, 125, 0.262745098);
+  height: 80vh;
+  position: relative;
 }
 
-/*# sourceMappingURL=estilos.css.map */
+.Nosotras {
+  background: rgb(101, 6, 6);
+  background: radial-gradient(circle, rgb(101, 6, 6) 0%, rgba(237, 162, 140, 0.2021183473) 100%);
+  border: 3px solid black;
+  border-radius: 10px;
+  height: 79vh;
+  text-align: center;
+  padding: 25px;
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+.Nosotras h2 {
+  padding-top: 25%;
+}
+
+.galeria {
+  background-color: #260502;
+  width: 100%;
+}
+
+.article1,
+.article2,
+.article3,
+.article4,
+.article5,
+.article6 {
+  z-index: 2;
+  background-color: #260502;
+  padding: 10px;
+}
+
+
