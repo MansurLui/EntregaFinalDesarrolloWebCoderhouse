@@ -5,6 +5,24 @@
     font-family: "Oswald", sans-serif;
 }
 //extend//
+.BotonNav{
+    width: 100%;
+}
+.Logo{
+    @media only screen and (max-width: 768px){
+        position: relative;
+        margin: 0;
+        text-align: center;
+    }
+    @media only screen and (min-width: 769px){
+        padding-left:5%;;
+    }
+}
+.Menu{
+    text-align: start;
+    margin: 0;
+    padding: 0;
+}
 .position_cards{
     background-position: center;
     background-size: cover;
@@ -42,12 +60,9 @@
 }
 
 // ----  barra navegacion ---- //
-.barraNav {
-    @extend .barra;
-}
-h1{
-    font-size: 1em;
-    position: left;
+
+.navbar-nav{
+    padding-left:0;
 }
 // ---- carrousel ---- //
 .carousel {

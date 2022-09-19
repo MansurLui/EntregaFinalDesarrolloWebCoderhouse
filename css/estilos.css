@@ -6,16 +6,39 @@
   font-family: "Oswald", sans-serif;
 }
 
+.BotonNav {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .Logo {
+    position: relative;
+    margin: 0;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .Logo {
+    padding-left: 5%;
+  }
+}
+
+.Menu {
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+
 .position_cards, .Social :hover, .Social, .Quinceañeras :hover, .Quinceañeras, .Novia :hover, .Novia {
   background-position: center;
   background-size: cover;
 }
 
-.barra, .barraNav {
+.barra {
   z-index: 5;
   padding: 0;
 }
-.barra div, .barraNav div {
+.barra div {
   left: 50%;
 }
 
@@ -38,9 +61,8 @@
   color: white;
 }
 
-h1 {
-  font-size: 1em;
-  position: left;
+.navbar-nav {
+  padding-left: 0;
 }
 
 .carousel {
