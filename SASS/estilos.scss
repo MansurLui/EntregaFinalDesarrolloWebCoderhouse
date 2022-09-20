@@ -160,44 +160,23 @@ section {
 
 // ----  nosotras ---- //
 .nosotras {
-    background-image: url(../img/fondo2.jpg);
+    // background-image: url(../img/fondo2.jpg);
     text-align: center;
     position: cover;
 }
 .card-nosotras{
-    position:center center;
-    display:inline-block;
-    margin: 5% 3%;
-    border: 2px solid black;
-    background-image: url(../img/fondomaquilaje.jpg);
-}
-.card-body{
-    .card-title{
+
+    padding:5% 3%;
+    margin:0;
+    // background-image: url(../img/fondomaquilaje.jpg);
+    .card-img{
+        border: 3px solid black
+    }
+    .card-body{
         text-align: center;
+        
     }
 }
-
-// mapa que no use
-
-// $mapa: (
-//     10px: red,
-//     20px: orange,
-//     30px: yellow,
-//     40px: green,
-//     );
-//     @each $sizes, $color in $mapa {
-//         .maps-#{$color} {
-//             background-color: #333;
-//             height: 4em;
-//             width: 50%;
-//             border: $sizes solid $color;
-//             text-align: center;
-//             font-size: 30px;
-//             text-shadow: 0 0 5px orange ;
-//             border-radius: 10px;
-//         }
-//     }
-
 
 // ----  galeria ---- //
 .galeria {
@@ -209,12 +188,12 @@ section {
 }
 // ----  footer ---- //
 footer {
-    background-color: #260502;
-    text-align: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(143deg, rgba(0,0,0,1) 64%, rgba(255,128,0,1) 100%);    text-align: center;
     color: white;
     margin: 0;
     padding: 20px;
-    font-size: 15px;
+    font-size: 5px;
     font-family: "Oswald", sans-serif;
     z-index: 5;
 }
