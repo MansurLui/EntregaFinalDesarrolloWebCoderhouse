@@ -95,27 +95,18 @@ h2 {
   text-align: center;
 }
 
-section {
-  display: inline-block;
-  text-align: center;
-  height: 80vh;
-  z-index: 2;
+.serviciosIndex {
+  color: white;
   width: 100%;
-}
-section div {
-  font-size: 20px;
+  margin: 0;
+  padding: 0 10%;
   text-align: center;
-  z-index: 2;
 }
-section div card {
-  height: 70vh;
-  display: inline-block;
+
+.card-body-index {
   border: 3px solid black;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  background-color: #212529;
+  margin: 1% 0;
 }
 
 .Descripcion {
