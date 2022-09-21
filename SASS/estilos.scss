@@ -164,18 +164,43 @@ section {
     text-align: center;
     position: cover;
 }
+.tituloNosotras{
+    margin: 0;
+    padding: 5%;
+    h2{
+    font-size:65px;
+    display: inline-block;
+    text-align: center;
+    }
+}
 .card-nosotras{
-
     padding:5% 3%;
     margin:0;
     // background-image: url(../img/fondomaquilaje.jpg);
     .card-img{
-        border: 3px solid black
+        border: 3px solid black;
+        width:75%;
+        height:20rem;
     }
     .card-body{
         text-align: center;
-        
     }
+}
+.descripcionNosotras{
+    color: white;
+    background-color:#212529;
+    border-top: 3px solid black;
+    text-align: center;
+    padding: 5%;
+    height: 10rem;
+}
+.tituloNuestroEspacio{
+    @extend .tituloNosotras
+}
+.nuestroEspacio{
+    margin: 0;
+    padding: 5% 3%;
+    position: center;
 }
 
 // ----  galeria ---- //
