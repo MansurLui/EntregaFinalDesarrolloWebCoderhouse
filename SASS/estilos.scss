@@ -92,7 +92,7 @@
         text-align: center;
     }
 
-// ----  cards ---- //
+// ----  cards servicios ---- //
 .serviciosIndex{
     color:white;
     width:100%;
@@ -106,6 +106,35 @@
     margin:1% 0;
 }
 
+// ----  div contactanos ---- //
+.contactanosIndex{
+    @extend .descripcionNosotras;
+    margin-top:10%;
+}
+.botonContacto{
+    margin:1%;
+    padding:10px 20px;
+    border-radius: 10px;
+}
+.mapaInfo{
+    left: 5%;
+    margin: 5% 0;
+}
+.Ubicacion{
+    width: 100%;
+}
+.direccionInfo{
+    color:black;
+    @media only screen and (max-width: 537px){
+        font-size:15px;
+    }
+    @media only screen and (max-width: 307px){
+        font-size:12px;
+    }
+}
+.direccionInfoText{
+    @extend .direccionInfo;
+}
 
 .Descripcion {
     text-decoration: none;

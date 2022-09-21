@@ -109,6 +109,39 @@ h2 {
   margin: 1% 0;
 }
 
+.contactanosIndex {
+  margin-top: 10%;
+}
+
+.botonContacto {
+  margin: 1%;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.mapaInfo {
+  left: 5%;
+  margin: 5% 0;
+}
+
+.Ubicacion {
+  width: 100%;
+}
+
+.direccionInfo, .direccionInfoText {
+  color: black;
+}
+@media only screen and (max-width: 537px) {
+  .direccionInfo, .direccionInfoText {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 307px) {
+  .direccionInfo, .direccionInfoText {
+    font-size: 12px;
+  }
+}
+
 .Descripcion {
   text-decoration: none;
 }
@@ -188,7 +221,7 @@ h2 {
   text-align: center;
 }
 
-.descripcionNosotras {
+.descripcionNosotras, .contactanosIndex {
   color: white;
   background-color: #212529;
   border-top: 3px solid black;
