@@ -169,15 +169,29 @@ section div card {
   display: inline-block;
   text-align: center;
 }
+@media only screen and (max-width: 487px) {
+  .tituloNosotras h2, .tituloNuestroEspacio h2 {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 337px) {
+  .tituloNosotras h2, .tituloNuestroEspacio h2 {
+    font-size: 35px;
+  }
+}
 
 .card-nosotras {
   padding: 5% 3%;
   margin: 0;
 }
 .card-nosotras .card-img {
-  border: 3px solid black;
+  border: 4px solid black;
   width: 75%;
-  height: 20rem;
+  height: 30rem;
+  filter: grayscale(100%);
+}
+.card-nosotras .card-img:hover {
+  filter: grayscale(0%);
 }
 .card-nosotras .card-body {
   text-align: center;
