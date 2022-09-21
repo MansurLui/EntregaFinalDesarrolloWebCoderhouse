@@ -17,7 +17,7 @@
     }
 }
 .Boton {
-    bottom: 150px;
+    bottom: 5px;
     height: 60px;
     width: 60px;
     position: fixed;
@@ -26,7 +26,7 @@
     background-color: black;
     border: 3px solid white;
     font-size: 35px;
-    border-radius: 50%;
+    border-radius: 40% 0;
     z-index: 15;
     text-decoration: none;
     a {
@@ -42,20 +42,41 @@
 }
 
 // ----  barra navegacion ---- //
-.barraNav {
-    @extend .barra;
+.BotonNav{
+    width: 100%;
+    font-size: 27px;
 }
-h1{
-    font-size: 1em;
-    position: left;
+.Logo{
+    @media only screen and (max-width: 768px){
+        position: relative;
+        margin: 0;
+        text-align: center;
+    }
+    @media only screen and (min-width: 769px){
+        padding-left:5%;;
+    }
+
+}
+.Menu{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    div{
+    width: 100%;
+    text-align:center;
+    font-size:15px;
+    }
+}
+.navbar-nav{
+    padding-left:0;
 }
 // ---- carrousel ---- //
 .carousel {
     text-align: center;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     width: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 .container-fluid {
@@ -128,50 +149,59 @@ section {
 
 // ----  contacto ---- //
 .contacto {
-    padding: 15px;
-    background-color: #81817d43;
+    color: white;
+    text-shadow: 0 2px 0 black;
+    padding:0 10%;
     height: 80vh;
     position: relative;
+    background-image: url(../img/fondo2.jpg);
+    @extend .position_cards;
 }
 
 // ----  nosotras ---- //
-.Nosotras {
-    background: rgb(101, 6, 6);
-    background: radial-gradient(circle,
-            rgba(101, 6, 6, 1) 0%,
-            rgba(237, 162, 140, 0.20211834733893552) 100%);
-    height: 85vh;
+.nosotras {
+    // background-image: url(../img/fondo2.jpg);
     text-align: center;
-    padding: 25px;
-    color: white;
-    text-shadow: 0px 0px black;
-    div{
-        position:center;
-    }
-
+    position: cover;
 }
-
-// mapa que no use
-
-// $mapa: (
-//     10px: red,
-//     20px: orange,
-//     30px: yellow,
-//     40px: green,
-//     );
-//     @each $sizes, $color in $mapa {
-//         .maps-#{$color} {
-//             background-color: #333;
-//             height: 4em;
-//             width: 50%;
-//             border: $sizes solid $color;
-//             text-align: center;
-//             font-size: 30px;
-//             text-shadow: 0 0 5px orange ;
-//             border-radius: 10px;
-//         }
-//     }
-
+.tituloNosotras{
+    margin: 0;
+    padding: 5%;
+    h2{
+    font-size:65px;
+    display: inline-block;
+    text-align: center;
+    }
+}
+.card-nosotras{
+    padding:5% 3%;
+    margin:0;
+    // background-image: url(../img/fondomaquilaje.jpg);
+    .card-img{
+        border: 3px solid black;
+        width:75%;
+        height:20rem;
+    }
+    .card-body{
+        text-align: center;
+    }
+}
+.descripcionNosotras{
+    color: white;
+    background-color:#212529;
+    border-top: 3px solid black;
+    text-align: center;
+    padding: 5%;
+    height: 10rem;
+}
+.tituloNuestroEspacio{
+    @extend .tituloNosotras
+}
+.nuestroEspacio{
+    margin: 0;
+    padding: 5% 3%;
+    position: center;
+}
 
 // ----  galeria ---- //
 .galeria {
@@ -183,12 +213,12 @@ section {
 }
 // ----  footer ---- //
 footer {
-    background-color: #260502;
-    text-align: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(143deg, rgba(0,0,0,1) 64%, rgba(255,128,0,1) 100%);    text-align: center;
     color: white;
     margin: 0;
     padding: 20px;
-    font-size: 15px;
+    font-size: 5px;
     font-family: "Oswald", sans-serif;
     z-index: 5;
 }
@@ -212,11 +242,13 @@ footer {
 }
 
 .BotonVolver {
-    right: 80%;
+    left: 3%;
+    border-radius: 0 40%;
     @extend .Boton;
 }
 .BotonSubir{
-    left: 80%;
+    right: 3%;
     font-size: 45px;
     @extend .Boton;
+    position: fixed;
 }

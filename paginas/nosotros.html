@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +13,6 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
@@ -23,61 +22,141 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;1,300&family=Oswald:wght@300;400;500&display=swap"
         rel="stylesheet">
-    <title>Nosotros ✔</title>
+    <title>Nosotras ✔</title>
 </head>
 
 <body>
     <header>
-        <div class="container-fluid barra">
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark  col-12">
-                <ul class="navbar-nav col-sm-12 col-md-12">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand Logo" href="../index.html">
+                <h1>Concepto M</h1>
+            </a>
+            <button class="navbar-toggler BotonNav" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavbar">
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav col-sm-12 col-md-12 Menu">
                     <li class="navbar-item dropdown col-sm-2 col-md-3">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Servicios</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                            data-toggle="dropdown">Servicios</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="../index.html#novia"><h5>Novias</h5></a>
-                            <a class="dropdown-item" href="../index.html#quinceañeras"><h5>Quinceañeras</h5></a>
-                            <a class="dropdown-item" href="../index.html#social"><h5>Social</h5></a>
+                            <a class="dropdown-item" href="../index.html#novia">
+                                <h5>Novias</h5>
+                            </a>
+                            <a class="dropdown-item" href="../index.html#quinceañeras">
+                                <h5>Quinceañeras</h5>
+                            </a>
+                            <a class="dropdown-item" href="../index.html#social">
+                                <h5>Social</h5>
+                            </a>
                     </li>
-                    <li class="nav-item col-sm-2 col-md-2">
-                        <a class="nav-link" href="#">Nosotros</a>
-                    </li>
-                    <li class="navbar-item dropdown col-sm-3 col-md-3">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Reserva tu cita</a>
+                    <li class="navbar-item dropdown col-sm-3 col-md-4">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Reserva tu
+                            cita</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="./contacto.html">Via web</a>
-                            <a class="dropdown-item" href="https://es.fresha.com/a/concepto-m-by-mane-argentina-vicente-lopez-3050-g9wfzfhq" target="_blank">Autogestion de turnos</a>
+                            <a class="dropdown-item" href="./contacto.html">
+                                <h5>Via web</h5>
+                            </a>
+                            <a class="dropdown-item"
+                                href="https://es.fresha.com/a/concepto-m-by-mane-argentina-vicente-lopez-3050-g9wfzfhq"
+                                target="_blank">
+                                <h5>Contactanos</h5>
+                            </a>
+                    </li>
+                    <li class="nav-item col-sm-2 col-md-3">
+                        <a class="nav-link" href="./nosotros.html">Nosotras</a>
                     </li>
                     <li class="nav-item col-sm-2 col-md-2">
                         <a class="nav-link" href="./galeria.html">Galeria</a>
                     </li>
-                    <li>
-                    <h1><a class="navbar-brand col-sm-3 col-md-3" href="../index.html">Concepto M</a></h1>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
-        <div class="container-fluid row col-12 Nosotras">
-            <h2>(aca agrego una desccripcion del lugar y lo que hacen)<br>Concepto M by Mane Un lugar donde podrás encontrar todo lo que necesitas y disfrutar mientras tanto. Atendemos en Galería Wright en Vicente Lopez 3050, timbre sobre las escaleras</h2>
-            <h2>(aca voy a ingresar mas texto que nose que voy a poner , pero con algo lo voy a completar, solamente tengo que pensar que poner para que quede lindo y ordenado.<br>
-                tambien seguro agrege alguna foto o similar explicando las integrantes del equipo, talvez con cards o algo asi.)
-            </h2>
+    <div class="container-fluid column">
+        <div class="tituloNosotras">
+            <h2>NUESTRO EQUIPO</h2>
         </div>
-<footer>
-    <div class="Redes">
-        <h2>Seguinos en todas las redes sociales</h2>
-        <a href="https://www.instagram.com/concepto.m.bymane/?hl=es" target="_blank" class="LogoInsta" alt="logo instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="" class="LogoWsp"><i class="fa-brands fa-whatsapp" alt="logo whatssap"></i></a>
     </div>
-    <h3>Concepto M - Todos los derechos reservados</h3>
-    <h3> <i class="fa-solid fa-location-dot"></i><a
-        href="https://www.google.com/maps/place/CONCEPTO+M+by+Mane/@-36.8916612,-60.3220238,18z/data=!4m5!3m4!1s0x9594454420cef909:0xc4f6e5efac6fc692!8m2!3d-36.8916934!4d-60.3208973"
-        class="Ubicacion">  Vicente Lopez 3050 , Primer piso, Argentina (Argentina)</a></h3>
+    <div class="container-fluid row col-12">
+        <card class="card-nosotras col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <img src="../img/galeria1.jpg" class="card-img img-fluid" alt="foto de galeria1">
+            <div class="card-body">
+                <h3 class="card-title">Mané</h3>
+                <p class="card-text">Maquilladora, Peinadora y Docente.</p>
+            </div>
+        </card>
+        <card class="card-nosotras col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <img src="../img/galeria1.jpg" class="card-img img-fluid" alt="foto de galeria1">
+            <div class="card-body">
+                <h3 class="card-title">Gi</h3>
+                <p class="card-text">Colorista , Maquilladora y Peinadora.</p>
+            </div>
+        </card>
+        <card class="card-nosotras col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <img src="../img/galeria1.jpg" class="card-img img-fluid" alt="foto de galeria1">
+            <div class="card-body">
+                <h3 class="card-title">Laura</h3>
+                <p class="card-text">Masajista.</p>
+            </div>
+        </card>
+        <card class="card-nosotras col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <img src="../img/galeria1.jpg" class="card-img img-fluid" alt="foto de galeria1">
+            <div class="card-body">
+                <h3 class="card-title">Camila</h3>
+                <p class="card-text">Nails Arts.</p>
+            </div>
+        </card>
+        <card class="card-nosotras col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <img src="../img/galeria1.jpg" class="card-img img-fluid" alt="foto de galeria1">
+            <div class="card-body">
+                <h3 class="card-title">Cintia</h3>
+                <p class="card-text">Lasherista.</p>
+            </div>
+        </card>
+        <card class="card-nosotras col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <img src="../img/galeria1.jpg" class="card-img img-fluid" alt="foto de galeria1">
+            <div class="card-body">
+                <h3 class="card-title">La nueva</h3>
+                <p class="card-text">Nails Arts.</p>
+            </div>
+        </card>
+    </div>
+    <div class="container-fluid column">
+        <div class="descripcionNosotras">
+            <h3>"aca va un brebe relato de nosotras"</h3>
+        </div>
+    </div>
+    <div class="container-fluid column">
+        <div class="tituloNuestroEspacio">
+            <h2>NUESTRO LUGAR</h2>
+        </div>
+    </div>
+    <div class="container-fluid nuestroEspacio row col-12">
+        <article class="article1 col-xs-12 col-sm-6 col-md-6 col-lg-6"><img src="../img/galeria1.jpg" class="img-fluid"
+                alt="foto de galeria1"></article>
+        <article class="article2 col-xs-12 col-sm-6 col-md-6 col-lg-6"><img src="../img/galeria7.jpg" class="img-fluid"
+                alt="foto de galeria2"></article>
+        <article class="article3 col-xs-12 col-sm-6 col-md-6 col-lg-6"><img src="../img/galeria3.jpg" class="img-fluid"
+                alt="foto de galeria3"></article>
+        <article class="article4 col-xs-12 col-sm-6 col-md-6 col-lg-6"><img src="../img/galeria4.jpg" class="img-fluid"
+                alt="foto de galeria4"></article>
+    </div>
+    <footer>
+        <div class="Redes">
+            <a href="https://www.instagram.com/concepto.m.bymane/?hl=es" target="_blank" class="LogoInsta"
+                alt="logo instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="LogoWsp"><i class="fa-brands fa-whatsapp" alt="logo whatssap"></i></a>
+        </div>
+        <h3>Concepto M - Todos los derechos reservados</h3>
+        <h3> <i class="fa-solid fa-location-dot"></i><a
+                href="https://www.google.com/maps/place/CONCEPTO+M+by+Mane/@-36.8916612,-60.3220238,18z/data=!4m5!3m4!1s0x9594454420cef909:0xc4f6e5efac6fc692!8m2!3d-36.8916934!4d-60.3208973"
+                class="Ubicacion"> Vicente Lopez 3050 , Primer piso, Argentina (Argentina)</a></h3>
         <div>
             <a class="BotonVolver" href="../index.html"><i class="fa-solid fa-house"></i></a>
             <a class="BotonSubir" href="#"><i class="fa-solid fa-angle-up"></i></a>
         </div>
-</footer>
+    </footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </html>
