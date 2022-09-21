@@ -92,6 +92,8 @@
         text-align: center;
     }
 
+// ---  //
+
 // ----  cards servicios ---- //
 .serviciosIndex{
     color:white;
@@ -103,45 +105,63 @@
 .card-body-index{
     border: 3px solid black;
     background-color: #212529;
-    margin:1% 0;
+    margin:3% 0;
 }
+// ---  //
 
 // ----  div contactanos ---- //
 .contactanosIndex{
     @extend .descripcionNosotras;
-    margin-top:10%;
+    margin-top:5%;
 }
 .botonContacto{
     margin:1%;
     padding:10px 20px;
     border-radius: 10px;
 }
+// ---  //
+
+// ----  div donde estamos ---- //
+.tituloDondeEstamos {
+    @extend .tituloNosotras;
+}
+// ---  //
+
+// ----  div mapa ---- //
 .mapaInfo{
-    left: 5%;
-    margin: 5% 0;
+    margin: 3% 0;
 }
-.Ubicacion{
+.ubicacionInfo{
     width: 100%;
+    margin:3% 0;
+    padding: 1%;
 }
-.direccionInfo{
-    color:black;
-    @media only screen and (max-width: 537px){
-        font-size:15px;
-    }
-    @media only screen and (max-width: 307px){
-        font-size:12px;
-    }
+.info{
+    padding-top:3%;
 }
-.direccionInfoText{
-    @extend .direccionInfo;
+// ---  //
+
+// ----  div nuestros trabajos ---- //
+.tituloNuestrosTrabajos{
+    @extend .tituloNosotras;
+    text-align:center;
 }
 
-.Descripcion {
+.descripcion {
     text-decoration: none;
 }
+.trabajos{
+    height:85vh;
+    padding:3%;
+    border:3px solid black;
+}
+
 .Novia{
     background-image: url(../img/noviaimg.jpg);
     @extend .position_cards;
+    border:3px solid black;
+    margin:0;
+    padding: 3%;
     :hover {
     background-image: url(../img/noviaimg.jpg);
     @extend .position_cards;
@@ -241,6 +261,8 @@
         padding: 10px;
     }
 }
+// ---  //
+
 // ----  footer ---- //
 footer {
     background: rgb(0,0,0);
@@ -252,25 +274,33 @@ footer {
     font-family: "Oswald", sans-serif;
     z-index: 5;
 }
-
+.direccionInfo{
+    color:white;
+    @media only screen and (max-width: 537px){
+        font-size:18px;
+    }
+    @media only screen and (max-width: 307px){
+        font-size:15rem;
+    }
+}
+.direccionInfoText{
+    padding-top:3%;
+    @extend .direccionInfo;
+}
+.infoWsp{
+    padding-top:3%;
+}
+.LogoWsp{
+    color:white;
+    font-size:15px;
+}
 .LogoInsta,
-.LogoWsp,
 .LogoGmail {
-    color: white;
-    width: 50px;
-    height: 50px;
-    font-size: 50px;
-    padding: 15px;
+@extend .LogoWsp;
 }
+//  ---  //
 
-.Ubicacion {
-    color: white;
-    width: 80px;
-    height: 80px;
-    right: 5px;
-    padding: 10px;
-}
-
+// ----  BOTONES ---- //
 .BotonVolver {
     left: 3%;
     border-radius: 0 40%;
