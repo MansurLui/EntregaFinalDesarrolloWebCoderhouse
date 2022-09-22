@@ -8,6 +8,7 @@
 .position_cards{
     background-position: center;
     background-size: cover;
+    text-decoration: none;
 }
 .barra {
     z-index: 5;
@@ -76,13 +77,17 @@
     background-repeat: no-repeat;
     width: 100%;
     background-position: center;
-    background-size: cover;
+    background-size:auto;
+
+    position:relative;
 }
 
 .container-fluid {
     text-align: center;
     margin: 0;
-    padding: 0;}
+    padding: 0;
+    position: relative;
+}
     a {
         width: 100%;
         color: white;
@@ -129,11 +134,11 @@
 
 // ----  div mapa ---- //
 .mapaInfo{
-    margin: 3% 0;
+    margin: 1% 0;
 }
 .ubicacionInfo{
     width: 100%;
-    margin:3% 0;
+    margin:1% 0;
     padding: 1%;
 }
 .info{
@@ -147,45 +152,118 @@
     text-align:center;
 }
 
-.descripcion {
-    text-decoration: none;
+.bordesder{
+    border-radius: 25px 0 0 25px ;
+    @media only screen and (max-width:576px){
+        border-radius: 25px 25px 0 0;
+    }
 }
-.trabajos{
-    height:85vh;
-    padding:3%;
-    border:3px solid black;
+.cardTextoder{
+    padding:3% 0 2% 1%;
+    border:3px solid white;
+    border-radius: 0 25px 25px 0;
+    @media only screen and (max-width:576px){
+        padding: 1% 2%;
+        border:3px solid white;
+        border-radius: 0 0 25px 25px;
+    }
+}
+.textosResponsive{
+    @media only screen and (max-width: 444px){
+        h2{
+            font-size: 32px;
+        }
+        h3{
+            font-size:20px;
+        }
+    }
+}
+.trabajosIndex{
+    background-color: #212529;
+    margin:0;
+    padding: 1% 5%;
+    .cardImg{
+        width: 100%;
+        height: 20rem;
+        @extend .bordesder, .position_cards;
+    }
+    .cardTexto{
+        color: white;
+        position:center;
+        text-align: center;
+        align-items: center;
+        @extend .cardTextoder ,.textosResponsive;
+    }
+    hr{
+        border: 1px solid white;
+    }
+    .maquillajeNovia{
+        background-image: url(../img/noviaimg.jpg);
+    }
+    .maquillajequinceañera{
+        background-image: url(../img/noviaimg.jpg);
+    }
+    .maquillajesocial{
+        background-image: url(../img/noviaimg.jpg);
+    }
+    .pestañas{
+        background-image: url(../img/noviaimg.jpg);
+    }
+    .cejas{
+        background-image: url(../img/noviaimg.jpg);
+    }
+    .peluqueria{
+        background-image: url(../img/noviaimg.jpg);
+    }
+    .maquillajeNovia{
+        background-image: url(../img/noviaimg.jpg);
+    }
+    .maquillajeNovia{
+        background-image: url(../img/noviaimg.jpg);
+    }
 }
 
-.Novia{
-    background-image: url(../img/noviaimg.jpg);
-    @extend .position_cards;
-    border:3px solid black;
-    margin:0;
-    padding: 3%;
-    :hover {
-    background-image: url(../img/noviaimg.jpg);
-    @extend .position_cards;
-    opacity: 0.7;
-    }
-}
-.Quinceañeras {
-    background-image: url(../img/quinceañeraimg.jpg);
-    @extend .position_cards;
-    :hover {
-        background-image: url(../img/quinceañeraimg.jpg);
-        @extend .position_cards;
-        opacity: 0.7;
-    }
-}
-.Social {
-    background-image: url(../img/socialimg.jpg);
-    @extend .position_cards;
-    :hover {
-        background-image: url(../img/socialimg.jpg);
-        @extend .position_cards;
-        opacity: 0.7;
-    }
-}
+// .descripcion {
+//     text-decoration: none;
+//     padding:5px;
+// }
+// .trabajos{
+//     height:85vh;
+//     padding:1% 3%;
+//     border:3px 0 solid black;
+//     background-color: #212529;
+// }
+// .cardsNombre{
+//     background-color:red;
+// }
+
+// .Novia{
+//     background-image: url(../img/noviaimg.jpg);
+//     @extend .position_cards;
+//     margin:0;
+//     :hover {
+//     background-image: url(../img/noviaimg.jpg);
+//     @extend .position_cards;
+//     }
+// }
+// .Quinceañeras {
+//     background-image: url(../img/quinceañeraimg.jpg);
+//     @extend .position_cards;
+//     :hover {
+//         background-image: url(../img/quinceañeraimg.jpg);
+//         @extend .position_cards;
+//         opacity: 0.7;
+//     }
+// }
+// .Social {
+//     background-image: url(../img/socialimg.jpg);
+//     @extend .position_cards;
+//     :hover {
+//         background-image: url(../img/socialimg.jpg);
+//         @extend .position_cards;
+//         opacity: 0.7;
+//     }
+// }
 
 // ----  contacto ---- //
 .contacto {
@@ -311,4 +389,8 @@ footer {
     font-size: 45px;
     @extend .Boton;
     position: fixed;
+}
+.botonGaleria{
+    align-items: center;
+    width: 100%;
 }
