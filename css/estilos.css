@@ -290,43 +290,22 @@ h2 {
 }
 
 footer {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(143deg, rgb(0, 0, 0) 64%, rgb(255, 128, 0) 100%);
-  text-align: center;
+  height: 35vh;
+  background-color: #212529;
   color: white;
   margin: 0;
-  padding: 20px;
-  font-size: 5px;
-  font-family: "Oswald", sans-serif;
-  z-index: 5;
+  padding: 3%;
 }
 
-.direccionInfo, .direccionInfoText {
-  color: white;
+.redes {
+  position: left;
 }
-@media only screen and (max-width: 537px) {
-  .direccionInfo, .direccionInfoText {
-    font-size: 18px;
-  }
-}
-@media only screen and (max-width: 307px) {
-  .direccionInfo, .direccionInfoText {
-    font-size: 15rem;
-  }
-}
-
-.direccionInfoText {
-  padding-top: 3%;
-}
-
-.infoWsp {
-  padding-top: 3%;
-}
-
-.LogoWsp, .LogoInsta,
-.LogoGmail {
-  color: white;
+.redes div {
   font-size: 15px;
+}
+
+.contactoFooter {
+  height: 100%;
 }
 
 .BotonVolver {

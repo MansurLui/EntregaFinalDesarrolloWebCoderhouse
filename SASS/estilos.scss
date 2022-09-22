@@ -343,38 +343,20 @@
 
 // ----  footer ---- //
 footer {
-    background: rgb(0,0,0);
-    background: linear-gradient(143deg, rgba(0,0,0,1) 64%, rgba(255,128,0,1) 100%);    text-align: center;
+    height: 35vh;
+    background-color: #212529;
     color: white;
     margin: 0;
-    padding: 20px;
-    font-size: 5px;
-    font-family: "Oswald", sans-serif;
-    z-index: 5;
+    padding: 3%;
 }
-.direccionInfo{
-    color:white;
-    @media only screen and (max-width: 537px){
-        font-size:18px;
-    }
-    @media only screen and (max-width: 307px){
-        font-size:15rem;
+.redes{
+    position: left;
+    div{
+        font-size:15px;
     }
 }
-.direccionInfoText{
-    padding-top:3%;
-    @extend .direccionInfo;
-}
-.infoWsp{
-    padding-top:3%;
-}
-.LogoWsp{
-    color:white;
-    font-size:15px;
-}
-.LogoInsta,
-.LogoGmail {
-@extend .LogoWsp;
+.contactoFooter{
+    height:100%;
 }
 //  ---  //
 
