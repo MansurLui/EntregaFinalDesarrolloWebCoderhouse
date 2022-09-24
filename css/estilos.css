@@ -276,8 +276,11 @@ h2 {
 
 .nuestroEspacio {
   margin: 0;
-  padding: 5% 3%;
+  padding: 1% 3%;
   position: center;
+}
+.nuestroEspacio .lugar {
+  padding: 2%;
 }
 
 .galeria {
@@ -290,22 +293,24 @@ h2 {
 }
 
 footer {
-  height: 35vh;
+  height: 23vh;
   background-color: #212529;
   color: white;
   margin: 0;
   padding: 3%;
 }
 
-.redes {
-  position: left;
-}
-.redes div {
-  font-size: 15px;
-}
-
 .contactoFooter {
   height: 100%;
+  position: left;
+}
+.contactoFooter div {
+  font-size: 15px;
+}
+@media only screen and (max-width: 455px) {
+  .contactoFooter .infoWsp, .contactoFooter .correo, .contactoFooter .LogoInsta {
+    font-size: 10px;
+  }
 }
 
 .BotonVolver {
