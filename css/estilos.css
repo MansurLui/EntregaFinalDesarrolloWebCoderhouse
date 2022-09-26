@@ -376,9 +376,9 @@ footer {
 }
 
 .botonContacto:hover {
-  color: white;
+  color: black;
   background-color: #fac9b8;
-  border: 3px solid white;
+  border: 3px solid black;
 }
 
 .botonGaleria {
