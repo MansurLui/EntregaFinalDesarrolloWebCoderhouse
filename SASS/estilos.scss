@@ -53,6 +53,7 @@
 }
 .navbar-nav{
     padding-left:0;
+    color:#444054;
 }
 // ---- carrousel ---- //
 .carousel {
@@ -91,7 +92,7 @@
 }
 .card-body-index{
     border: 3px solid rgb(173, 122, 50);
-    background-color: rgb(160, 115, 88);
+    background-color: #fac9b8;
     margin:3% 0;
 }
 // ---  //
@@ -99,7 +100,7 @@
 // ----  div contactanos ---- //
 .contactanosIndex{
     color: rgb(33, 22, 6);
-    background-color:rgb(160, 115, 88);
+    background-color:#db8a74;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     text-align: center;
@@ -175,7 +176,7 @@
     }
 }
 .trabajosIndex{
-    background-color: rgb(127, 93, 77);
+    background-color: #DB8A74;
     margin:0;
     padding: 1% 5%;
     .cardImg{
@@ -194,7 +195,7 @@
     }
     .cardTexto{
         color: rgb(33, 22, 6);
-        background-color: rgb(160, 115, 88);
+        background-color: #FAC9B8;
         position:center;
         text-align: center;
         align-items: center;
@@ -323,7 +324,7 @@
 // ----  footer ---- //
 footer {
     height: 23vh;
-    background-color: #212529;
+    background-color:#444054;
     color: white;
     margin: 0;
     padding: 3%;
@@ -350,7 +351,7 @@ footer {
     position: fixed;
     text-align: center;
     line-height: 45px;
-    background-color: rgb(33, 22, 6);
+    background-color: #fac9b8;
     border: 3px solid white;
     font-size: 35px;
     border-radius: 40% 0;
@@ -364,13 +365,22 @@ footer {
 .BotonVolver {
     left: 3%;
     border-radius: 0 40%;
+    color: #444054;
+    border: 3px solid black; 
     @extend .Boton;
 }
 .BotonSubir{
     right: 3%;
     font-size: 45px;
+    color: #444054;
+    border: 3px solid black; 
     @extend .Boton;
     position: fixed;
+}
+.BotonSubir:hover , .BotonVolver:hover{
+    color:black;
+    background-color:#fac9b8;
+    border:3px solid black;
 }
 .botonContacto{
     margin:1%;
@@ -379,7 +389,7 @@ footer {
 }
 .botonContacto:hover{
     color:white;
-    background-color:#212529;
+    background-color:#fac9b8;
     border:3px solid white;
 }
 .botonGaleria{

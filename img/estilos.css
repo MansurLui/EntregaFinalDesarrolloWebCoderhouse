@@ -351,22 +351,12 @@ footer {
 .BotonVolver {
   left: 3%;
   border-radius: 0 40%;
-  color: #444054;
-  border: 3px solid black;
 }
 
 .BotonSubir {
   right: 3%;
   font-size: 45px;
-  color: #444054;
-  border: 3px solid black;
   position: fixed;
-}
-
-.BotonSubir:hover, .BotonVolver:hover {
-  color: black;
-  background-color: #fac9b8;
-  border: 3px solid black;
 }
 
 .botonContacto {
