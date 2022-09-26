@@ -17,24 +17,7 @@
         left: 50%
     }
 }
-.Boton {
-    bottom: 5px;
-    height: 60px;
-    width: 60px;
-    position: fixed;
-    text-align: center;
-    line-height: 45px;
-    background-color: black;
-    border: 3px solid white;
-    font-size: 35px;
-    border-radius: 40% 0;
-    z-index: 15;
-    text-decoration: none;
-    a {
-        text-decoration: none;
-        color:white;
-    }
-}
+
 
 //mixin//
 @mixin sizes($width, $bcolor) {
@@ -78,7 +61,6 @@
     width: 100%;
     background-position: center;
     background-size:auto;
-
     position:relative;
 }
 
@@ -101,28 +83,31 @@
 
 // ----  cards servicios ---- //
 .serviciosIndex{
-    color:white;
+    color:rgb(33, 22, 6);
     width:100%;
     margin:0;
     padding: 0 10%;
     text-align: center;
 }
 .card-body-index{
-    border: 3px solid black;
-    background-color: #212529;
+    border: 3px solid rgb(173, 122, 50);
+    background-color: rgb(160, 115, 88);
     margin:3% 0;
 }
 // ---  //
 
 // ----  div contactanos ---- //
 .contactanosIndex{
-    @extend .descripcionNosotras;
-    margin-top:5%;
+    color: rgb(33, 22, 6);
+    background-color:rgb(160, 115, 88);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    height: 10rem;
+    padding:1%
 }
-.botonContacto{
-    margin:1%;
-    padding:10px 20px;
-    border-radius: 10px;
+.contactanos{
+    margin-top:0
 }
 // ---  //
 
@@ -156,19 +141,30 @@
     border-radius: 25px 0 0 25px ;
     @media only screen and (max-width:576px){
         border-radius: 25px 25px 0 0;
+        border:3 solid rgb(33, 22, 6);
     }
 }
 .cardTextoder{
     padding:3% 0 2% 1%;
-    border:3px solid white;
+    border:3px solid rgb(33, 22, 6);
     border-radius: 0 25px 25px 0;
     @media only screen and (max-width:576px){
         padding: 1% 2%;
-        border:3px solid white;
+        border:3px solid rgb(33, 22, 6);
         border-radius: 0 0 25px 25px;
     }
 }
 .textosResponsive{
+    @media only screen and (min-width: 830px){
+        h3{
+            font-size:22px;
+        }
+    }
+    @media only screen and (max-width: 830px){
+        h3{
+            font-size:22px;
+        }
+    }
     @media only screen and (max-width: 444px){
         h2{
             font-size: 32px;
@@ -179,41 +175,51 @@
     }
 }
 .trabajosIndex{
-    background-color: #212529;
+    background-color: rgb(127, 93, 77);
     margin:0;
     padding: 1% 5%;
     .cardImg{
         width: 100%;
-        height: 20rem;
+        height: 60rem;
         @extend .bordesder, .position_cards;
+        @media only screen and (min-width:1060px){
+            height:40rem;
+        }
+        @media only screen and (min-width:960px){
+            height:30rem;
+        }
+        @media only screen and (max-width:959px){
+            height:20rem;
+        }
     }
     .cardTexto{
-        color: white;
+        color: rgb(33, 22, 6);
+        background-color: rgb(160, 115, 88);
         position:center;
         text-align: center;
         align-items: center;
         @extend .cardTextoder ,.textosResponsive;
     }
     hr{
-        border: 1px solid white;
+        border: 1px solid rgb(33, 22, 6);
     }
     .maquillajeNovia{
         background-image: url(../img/noviaimg.jpg);
     }
     .maquillajequinceañera{
-        background-image: url(../img/noviaimg.jpg);
+        background-image: url(../img/quinceanera4.jpg);
     }
     .maquillajesocial{
-        background-image: url(../img/noviaimg.jpg);
+        background-image: url(../img/curso3.jpg);
     }
     .pestañas{
-        background-image: url(../img/noviaimg.jpg);
+        background-image: url(../img/pestana3.jpg);
     }
     .cejas{
-        background-image: url(../img/noviaimg.jpg);
+        background-image: url(../img/cejas1.jpg);
     }
     .peluqueria{
-        background-image: url(../img/noviaimg.jpg);
+        background-image: url(../img/pelo5.jpg);
     }
     .maquillajeNovia{
         background-image: url(../img/noviaimg.jpg);
@@ -222,48 +228,6 @@
         background-image: url(../img/noviaimg.jpg);
     }
 }
-
-// .descripcion {
-//     text-decoration: none;
-//     padding:5px;
-// }
-// .trabajos{
-//     height:85vh;
-//     padding:1% 3%;
-//     border:3px 0 solid black;
-//     background-color: #212529;
-// }
-// .cardsNombre{
-//     background-color:red;
-// }
-
-// .Novia{
-//     background-image: url(../img/noviaimg.jpg);
-//     @extend .position_cards;
-//     margin:0;
-//     :hover {
-//     background-image: url(../img/noviaimg.jpg);
-//     @extend .position_cards;
-//     }
-// }
-// .Quinceañeras {
-//     background-image: url(../img/quinceañeraimg.jpg);
-//     @extend .position_cards;
-//     :hover {
-//         background-image: url(../img/quinceañeraimg.jpg);
-//         @extend .position_cards;
-//         opacity: 0.7;
-//     }
-// }
-// .Social {
-//     background-image: url(../img/socialimg.jpg);
-//     @extend .position_cards;
-//     :hover {
-//         background-image: url(../img/socialimg.jpg);
-//         @extend .position_cards;
-//         opacity: 0.7;
-//     }
-// }
 
 // ----  contacto ---- //
 .contacto {
@@ -283,8 +247,18 @@
     position: cover;
 }
 .tituloNosotras{
+    // position:sticky;
+    // display: inline-block;
+    // top:10px;
+    // border-radius:0 0 15px 15px ;
+    // border-left: 5px solid black;
+    // border-right: 5px solid black;
+    // border-bottom:2px solid black;
     margin: 0;
-    padding: 5%;
+    padding: 1%;
+    background-color: white;
+    width: 100%;
+    z-index: 10;
     h2{
     font-size:65px;
     display: inline-block;
@@ -338,7 +312,7 @@
 
 // ----  galeria ---- //
 .galeria {
-    @include sizes(100%,#260502);
+    @include sizes(100%,white);
     .article1,.article2,.article3,.article4,.article5,.article6 {
         z-index: 2;
         padding: 10px;
@@ -369,6 +343,24 @@ footer {
 //  ---  //
 
 // ----  BOTONES ---- //
+.Boton {
+    bottom: 5px;
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    text-align: center;
+    line-height: 45px;
+    background-color: rgb(33, 22, 6);
+    border: 3px solid white;
+    font-size: 35px;
+    border-radius: 40% 0;
+    z-index: 15;
+    text-decoration: none;
+    a {
+        text-decoration: none;
+        color:white;
+    }
+}
 .BotonVolver {
     left: 3%;
     border-radius: 0 40%;
@@ -379,6 +371,16 @@ footer {
     font-size: 45px;
     @extend .Boton;
     position: fixed;
+}
+.botonContacto{
+    margin:1%;
+    padding:10px 20px;
+    border-radius: 10px;
+}
+.botonContacto:hover{
+    color:white;
+    background-color:#212529;
+    border:3px solid white;
 }
 .botonGaleria{
     align-items: center;
